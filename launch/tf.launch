@@ -1,0 +1,8 @@
+<!---->
+<launch>
+<node pkg="tf"  type="static_transform_publisher" name="map_to_map2" args="24.544  99.713 -0.64 -1.6188 -0.02499 -0.1365 /map2 /map 10" />
+<node pkg="tf"  type="static_transform_publisher" name="map2_to_map3" args="544300 2799700 0 0 0 0 /map3 /map2 10" />
+<node pkg="tf"  type="static_transform_publisher" name="imu_to_base" args="0 0 0 -1.5708 0 0 /base_link /imu_link  10" />
+
+
+</launch>
